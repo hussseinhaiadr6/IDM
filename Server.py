@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-file_path=["C:/Users\HHR6\PycharmProjects\TASK4-IDM\PINO_IDM_2024 (1).xml"]
+file_path=""
 @app.route('/')
 def index():
     return (render_template('index.html'))
@@ -96,6 +96,7 @@ def upload_file():
         filename = secure_filename(file.filename)
         saved_path = os.path.join(upload_folder, filename)
         file.save(saved_path)
+        file_path=saved_path
 
         # Process the XML file
         xml_root = parse_xml(saved_path)
