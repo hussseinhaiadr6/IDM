@@ -8,7 +8,7 @@ app = Flask(__name__)
 CORS(app)
 app.config['CORS_HEADERS'] = 'Content-Type'
 
-file_path=""
+file_path=[]
 @app.route('/')
 def index():
     return (render_template('index.html'))
@@ -29,7 +29,7 @@ def save_paths():
 
     print("saved the paths")
 
-    df= Extract_Selected_Tags(file_path, "./selected_paths.txt")
+    df= Extract_Selected_Tags(file_path[-1], "./selected_paths.txt")
     df.to_excel("./output.xlsx")
     html = df.to_html()
 
@@ -96,7 +96,8 @@ def upload_file():
         filename = secure_filename(file.filename)
         saved_path = os.path.join(upload_folder, filename)
         file.save(saved_path)
-        file_path=saved_path
+        file_path.append(saved_path)
+        print("fhjfhjf ",file_path)
 
         # Process the XML file
         xml_root = parse_xml(saved_path)

@@ -4,6 +4,7 @@ import pandas as pd
 # Parse the XML file
 
 def Extract_Selected_Tags(IDM_path,Selected_path):
+    print("Extracting from ", IDM_path)
     tree = ET.parse(IDM_path)
     root = tree.getroot()
 
