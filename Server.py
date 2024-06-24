@@ -28,8 +28,8 @@ def save_paths():
             f.write(path + '\n')
 
     print("saved the paths")
-    print(file_path[-1])
-    df= Extract_Selected_Tags(file_path[-1], "./selected_paths.txt")
+
+    df= Extract_Selected_Tags(file_path, "./selected_paths.txt")
     df.to_excel("./output.xlsx")
     html = df.to_html()
 
