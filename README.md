@@ -5,16 +5,18 @@ It then perform a filter operation to the selected fields.
 Sava them into xlsx file to be downloaded
 
 ## Installation
-```Bawrsh 
+```Bash 
 git clone   thisrepo.git
 ```
 ### install the pre requisites
+```Bash
 pip install -r requirements.txt
-
+```
 
 ## run 
- run the server.py file 
-
+```Bash
+pyhton server.py  
+```
 and open the localhost:5000
 
 
