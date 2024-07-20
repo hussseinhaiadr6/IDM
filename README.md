@@ -5,9 +5,9 @@ It then perform a filter operation to the selected fields.
 Sava them into xlsx file to be downloaded
 
 ## Installation
-''' bash 
+```Bawrsh 
 git clone   thisrepo.git
-'''
+```
 ### install the pre requisites
 pip install -r requirements.txt
 
