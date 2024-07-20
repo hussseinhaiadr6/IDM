@@ -5,7 +5,7 @@ It then perform a filter operation to the selected fields.
 Sava them into xlsx file to be downloaded
 
 ## Installation
-'''bash 
+''' bash 
 git clone   thisrepo.git
 '''
 ### install the pre requisites
@@ -15,6 +15,6 @@ pip install -r requirements.txt
 ## run 
  run the server.py file 
 
- and open the localhost:5000
+and open the localhost:5000
 
 
