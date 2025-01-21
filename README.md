@@ -6,7 +6,7 @@ Sava them into xlsx file to be downloaded
 
 ## Installation
 ```Bash 
-git clone   thisrepo.git
+git clone  git@github.com:hussseinhaiadr6/IDM.git
 ```
 ### install the pre requisites
 ```Bash
